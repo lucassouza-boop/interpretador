@@ -1,0 +1,19 @@
+[project]
+name = "minipy"
+version = "0.1.0"
+description = "Interpretador tree-walking simples para um subconjunto de Python"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+minipy = "minipy.__main__:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
